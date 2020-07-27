@@ -14,7 +14,7 @@ public abstract class BeforeAfterEvent<T> implements Event {
     /**
      * Creates a new notification event on change in value.
      */
-    BeforeAfterEvent(final T oldValue, final T newValue) {
+    protected BeforeAfterEvent(final T oldValue, final T newValue) {
         this.oldValue = oldValue;
         this.newValue = newValue;
     }
